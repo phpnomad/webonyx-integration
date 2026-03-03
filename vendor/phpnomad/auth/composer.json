@@ -1,0 +1,39 @@
+{
+    "name": "phpnomad/auth",
+    "description": "",
+    "type": "library",
+    "homepage": "https://github.com/phpnomad/core",
+    "readme": "README.md",
+    "license": "MIT",
+    "scripts": {
+        "php-cs-fixer": "php-cs-fixer fix"
+    },
+    "autoload": {
+        "psr-4": {
+            "PHPNomad\\Auth\\": "lib/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PHPNomad\\Auth\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Alex Standiford",
+            "email": "alex@standiford.us"
+        }
+    ],
+    "require": {
+        "phpnomad/enum-polyfill": "^1.0",
+        "phpnomad/event": "^1.0"
+    },
+    "require-dev": {
+        "phpnomad/tests": "^0.1.0 || ^0.3.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "phpstan/extension-installer": true
+        }
+    }
+}

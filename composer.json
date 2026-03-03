@@ -1,0 +1,35 @@
+{
+  "name": "phpnomad/webonyx-integration",
+  "description": "webonyx/graphql-php integration for the PHPNomad GraphQL layer",
+  "type": "library",
+  "license": "MIT",
+  "homepage": "https://github.com/phpnomad/core",
+  "autoload": {
+    "psr-4": {
+      "PHPNomad\\GraphQL\\Webonyx\\": "lib/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "PHPNomad\\GraphQL\\Webonyx\\Tests\\": "tests/"
+    }
+  },
+  "repositories": [
+    { "type": "path", "url": "../graphql", "options": { "versions": { "phpnomad/graphql": "1.0.0" } } }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "php": ">=8.2",
+    "phpnomad/graphql": "^1.0",
+    "phpnomad/di": "^1.0",
+    "webonyx/graphql-php": "^15.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.6",
+    "mockery/mockery": "^1.5"
+  },
+  "scripts": {
+    "test:unit": "phpunit --testdox"
+  }
+}
