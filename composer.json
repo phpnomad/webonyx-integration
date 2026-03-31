@@ -22,7 +22,7 @@
   "require": {
     "php": ">=8.2",
     "phpnomad/graphql": "^1.0",
-    "phpnomad/di": "^1.0",
+    "phpnomad/di": "^2.0",
     "webonyx/graphql-php": "^15.0"
   },
   "require-dev": {
